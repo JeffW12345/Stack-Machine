@@ -8,6 +8,7 @@ This program implements a stack based interpreter using Golang. This is a tiny v
 This machine is given a string, containing a sequence of commands. Each command is separated by one space. The commands operate on a stack of integers. 
 
 **Commands to implement**
+
 The following commands must be implemented:
 
 An integer (from 0 to 50000): the machine pushes this integer onto the stack
@@ -25,7 +26,8 @@ After processing all the operations without errors, the machine returns the topm
 
 All numbers must lie between 0 and 50,000 inclusive. Any result that lies outside this range must stop the machine and return an error.
 
-Example command sequences
+**Example command sequences**
+
 The following examples will clarify what the machine does.
 
 You must write a test for every one. All tests must pass.
