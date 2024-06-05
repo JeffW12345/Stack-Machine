@@ -18,7 +18,7 @@ func TestGivenProcessStringGivenValidInput_producesExpectedOutput(t *testing.T) 
 	for input, want := range testInputsToExpectedOutputs {
 		got, err := processInput(input)
 		if err != nil {
-			t.Fatalf("unexpected error for input %q: %v", input, err)
+			t.Errorf("unexpected error for input %q: %v", input, err)
 		}
 		if got != want {
 			t.Errorf("for input %q got %d, want %d", input, got, want)
@@ -48,7 +48,7 @@ func TestGivenProcessStringGivenInvalidInput_producesExpectedOutput(t *testing.T
 	for input, want := range testInputsToExpectedErrorMessage {
 		_, err := processInput(input)
 		if err == nil {
-			t.Fatalf("expected error for input %q but got none", input)
+			t.Errorf("expected error for input %q but got none", input)
 		}
 		if err.Error() != want {
 			t.Errorf("for input %q got error message %q, want error message %q", input, err.Error(), want)
