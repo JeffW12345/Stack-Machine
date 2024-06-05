@@ -131,3 +131,5 @@ You can adapt the code in the main method in stack_machine_main.go to get the ou
 To run the tests, enter:
 
 go test
+
+There is also a version of this app which cab be run in the Go Playground by clicking the 'Run' button: https://go.dev/play/p/UecDrW1L2_o
