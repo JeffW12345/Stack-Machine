@@ -33,12 +33,14 @@ The following examples will clarify what the machine does.
 You must write a test for every one. All tests must pass.
 
 *Example: 99*
+
 The command "99" will:
 
 Push the value 99 onto the stack
 Result: The machine will pop the most recent value off the stack (99) and return it, without error
 
-*Example: 1 2 + *
+*Example: 1 2 +*
+
 The command sequence "1 2 +" will:
 
 Push 1 onto the stack
@@ -49,7 +51,8 @@ The stack will contain the single value of 3.
 
 Result: The machine will return this value of 3 with no error.
 
-*Example: 3 DUP + *
+*Example: 3 DUP +*
+
 The command sequence "3 DUP +" will:
 
 Push 3 onto the stack
@@ -59,6 +62,7 @@ push this result (6) onto the stack
 Result: The machine will return 6 and no error
 
 *Example: DUP 99*
+
 The command sequence "DUP 99" will:
 
 duplicate the topmost number on the stack. The stack is empty, so it will leave the stack being empty
@@ -66,6 +70,7 @@ Push 99 onto the stack
 Result: The machine will return 99 and no error
 
 *Example: 3 DUP * 1 +*
+
 The command sequence "3 DUP * 1 +" will:
 
 Push 3 onto the stack
@@ -78,7 +83,8 @@ Push this result (10) onto the stack
 Result: The machine will return 10 and no error
 
 *Example: 50000 1 +*
-the command sequence "50000 1 +" will:
+
+The command sequence "50000 1 +" will:
 
 Push 50000 onto the stack
 Push 1 onto the stack
@@ -87,12 +93,14 @@ The result is greater than 50,000 which is an overflow
 Result: The machine will stop and report an error
 
 *Example 50001*
+
 The command "50001" will:
 
 Stop the machine due to out of range value
 Result: The machine will stop and report an error
 
 *Example: 1 2 3 4 5 SUM*
+
 The command sequence "1 2 3 4 5 SUM" will:
 
 Push the numbers 1, 2, 3, 4 and 5 onto the stack
@@ -101,12 +109,14 @@ Push the result (15) onto the stack
 Result: The machine will retun 15 and no error
 
 *Example: XXX-INVALID 1 2 +*
+
 The command "XXX-INVALID" will:
 
 Stop the machine as XXX-INVALID is not a valid input
 Result: The machine will stop and report an error
 
 *Example: 2 5 -*
+
 The commands "2 5 -" will:
 
 Push 2 onto the stack
