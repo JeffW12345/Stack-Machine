@@ -56,8 +56,6 @@ func processInput(inputAsString string) (int, error) {
 }
 
 func main() {
-	// Example usage
-
 	result, err := processInput("99")
 	if err != nil {
 		fmt.Println(err)
